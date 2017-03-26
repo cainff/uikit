@@ -1,0 +1,238 @@
+
+.button {
+    @include first-button;
+    margin-top:45%;
+}
+
+.text-but {
+    @include font-title;
+    font-size:22px;
+    margin-top: 3%;
+}
+
+.little_button {
+    margin-top: 5%;
+    @include button;
+}
+
+.little_button_right {
+    margin-top: 5%;
+    @include button-right;
+}
+
+
+.text-but2 {
+    @extend .text-but;
+    font-size: 19px;
+    margin-top: 8%;
+}
+
+select {
+    @extend .button;
+    margin-top: 6%;
+    width: 45%;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 18px;
+}
+
+.p_select {
+    margin-left:1%;
+}
+
+.active_button {
+    float: right;
+    position: relative;
+    width: 51%;
+    height: 3%;
+    margin-top: -14%;
+}
+
+.activ-but {
+    @include activ-div;
+}
+
+.activ-but-right {
+    @include activ-div;
+    float: right;
+    position: relative;
+    top: -54%;
+}
+
+.ball {
+    @include ball-white;
+}
+
+.select-2 {
+    @extend select;
+    background-color: #ffffff;
+    color:#00aced;
+}
+
+.number {
+    position: relative;
+    float: right;
+    width: 60%;
+    height: 3%;
+    margin-top: -19%;
+    /* display: inline; */
+    margin-right: -4%;
+    margin-top: -15%;
+}
+
+.bubble {
+    width: 20%;
+    height: 55%;
+    border: solid white 1px;
+    display: inline-block;
+    border-radius: 51%;
+    margin-left: 7%;  
+    color: white;
+    font-weight: bold;
+    font-family: 'Open sans',sans-serif;
+    text-align: center;    
+}
+
+.number_bubble {
+    margin-top: 20%;
+}
+
+.bubble24{
+    @extend .bubble;
+}
+
+.bubble120 {
+    @extend .bubble;
+     width: 23%;
+    border-radius: 17px;
+
+}
+
+.city-1{
+@include ul-li;
+}
+
+ul {
+    li {
+        border-bottom: solid 1px white;
+        padding:7%;
+    }
+}
+
+.barca {
+    border-bottom: 0px;
+}
+
+.checkbox {
+    width: 18%;
+    height: 10%;
+    display: block;
+    position: relative;
+    float: right;
+    margin-top: -6%;
+}
+
+.squaredTwo {
+    width: 70%;
+    height: 18%;
+    position: relative;
+    margin: 20px auto;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.squaredTwo label {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.squaredTwo label:after {
+    content: '';
+    width: 56%;
+    height: 38%;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    border: 3px solid #fcfff4;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);    
+}
+
+.bullet label:after {
+    content: '' !important;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: 28%;
+    left: 26%;
+    border: 1px solid white;
+    /* border-top: none; */
+    border-radius: 50%;
+    /* border-right: none; */
+    background: white;
+    opacity: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.squaredTwo label:hover::after {
+  opacity: 0.3;
+}
+.squaredTwo input[type=checkbox] {
+  visibility: hidden;
+}
+.squaredTwo input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+.ball-check {
+    border-radius:50% !important;
+}
+
+.float-left {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 5%;
+    margin-left: -3%;
+    margin-top: 10%;
+}
+
+.float-right {
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 5%;
+    margin-top: 10%;
+}
+
+.line-1 {
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+}
+
+.line-2 {
+    display: inline-block;
+    width: 100%;
+    height: 50%;    
+}
+
+.overide {
+    width: 15%;
+    height: 50%;
+    margin-left: 6%;
+}
+
+.p_bubble {
+    margin-top: 1%;
+}
+
+

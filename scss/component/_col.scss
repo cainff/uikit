@@ -1,0 +1,17 @@
+.grid {
+    margin: 0 auto;
+    height: 70%;
+    width: $grid;
+    position: relative;
+    float:left;
+    border:black solid 1px;
+}
+
+.grid1 {
+    @extend .grid;
+    margin-left: 1%;
+}
+
+.grid2 {
+    @extend .grid1;
+}

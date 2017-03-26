@@ -1,0 +1,26 @@
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+#background {
+    background-color:map-get($colors, bg);
+    height: 3120px;
+    width: 100%;
+}
+
+
+
+
+
+/*@mixin grid {
+    @extend grid1;
+    padding-left: 5%;
+} */
+
+
+/*._grid1 {
+    @include grid;
+}*/

@@ -1,0 +1,21 @@
+$grid:24%;
+
+.wrap {
+    margin: 0 auto;
+    width: 95%;
+    height: 100%;
+}
+
+@mixin ul-li {
+    width: 75%;
+    height: 10%;
+    position: relative;
+    float: left;
+    background-color: map-get($colors, milan);
+    color:white;
+    font-family: 'Open sans',sans-serif;
+    font-size: 18px;
+    letter-spacing: 0,5px;
+    border-radius: 15px;
+    border:1px solid white;
+}

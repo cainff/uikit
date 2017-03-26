@@ -1,0 +1,98 @@
+$font:'Open Sans', sans-serif;
+
+//Grid 1
+
+@mixin font-title {
+    font-family: $font;
+    font-weight: 600;
+    color:map-get($colors, but);
+    font-size: 48px;
+}
+
+@mixin font-button {
+    font-size:32px;
+}
+
+@mixin font-email {
+    @include font-button;
+    color:map-get($colors, email);
+}
+
+@mixin font-number {    
+    @extend .font-button;
+    color:map-get($colors, but);
+    font-size:28px;
+}
+
+@mixin font-select {
+    @extend .font-button;
+    color:map-get($colors, bg);
+}
+
+
+
+//Grid 2
+
+@mixin font-day {
+    @extend .font-title;
+    font-size:16px;
+} 
+
+@mixin font-like {
+    @extend .font-title;
+    font-size:28px;
+}
+
+@mixin font-hours {
+    @extend .font-title;
+    font-size:44px;
+}
+
+@mixin font-graduate {
+    @extend .font-title;
+    font-size:24px;
+}
+
+// Grid 4
+
+@mixin font-xxxl {
+    @extend .font-title;
+    font-size:60px;
+}
+
+@mixin font-xxl {
+    @extend .font-title;
+    font-size:54px;
+}
+
+@mixin font-xl {
+    @extend .font-title;
+    font-size:48px;
+}
+
+@mixin font-l {
+    @extend .font-title;
+    font-size:42px;
+}
+
+@mixin font-m {
+    @extend .font-title;
+    font-size:38px;
+}
+
+@mixin font-s {
+    @extend .font-title;
+    font-size:32px;
+}
+
+@mixin font-p {
+    @extend .font-title;
+    font-size:32px;
+    font-weight: 400;
+    letter-spacing: 20px;
+    white-space: pre-line;
+}
+
+
+
+
