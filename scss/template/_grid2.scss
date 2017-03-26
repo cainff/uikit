@@ -1,0 +1,112 @@
+.bars-white {
+    width: 100%;
+    height: 10%;
+    position: relative;
+    margin-top: 45%;
+}
+
+.bars-empty {
+    width: 100%;
+    height: 1%;
+    border-top:3px solid #40c1f2;
+    margin-top: 6%;
+}
+
+.bars-full {
+    width:20%;
+    height: 100%;
+    border-top: 3px solid white;
+    position: absolute;
+    margin-top: -1%;
+}
+
+.bars-full2 {
+    @extend .bars-full;
+    width: 45%;
+}
+
+.bars-full3 {
+    @extend .bars-full;
+    width: 75%;
+}
+
+.bars-full4 {
+    @extend .bars-full;
+    width: 96%;
+}
+
+
+.different {
+    width: 25%;
+}
+
+.hole {
+    width: 2%;
+    height: 1%;
+    border-top: 3px solid #00aced;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: -1%;
+}
+
+.hole2 {
+    @extend .hole;
+    margin-left: 50%;
+}
+
+.hole3 {
+    @extend .hole;
+    margin-left:75%;
+}
+
+.select_calendar {
+    width: 100%;
+    height: 5%;
+    margin-top: -11%;
+}
+
+.date {
+    margin-right: 8%;  
+    font-family: 'Open sans',sans-serif;
+    padding: 5%;
+}
+
+.date-white {
+    background-color: white;
+    color:map-get($colors, bg);
+}
+
+.calendar {
+    width: 100%;
+    height: 16%;
+    margin-top: 0%;
+}
+
+.date-content {
+    width: 100%;
+    height:auto;
+}
+
+.home {
+    width: 100%;
+    height: 2%;
+    font-family: $font;
+    font-size: 18px;
+    color:white;
+}
+
+.under {
+    text-decoration: underline !important;
+    margin-right: 6%;
+}
+
+
+.under2 {
+    @extend .under;
+    margin-left: 5%;
+}
+
+.pad {
+    padding:5%;
+}
+
