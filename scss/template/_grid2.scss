@@ -87,7 +87,7 @@
     height:auto;
 }
 
-.home {
+.home-2 {
     width: 100%;
     height: 2%;
     font-family: $font;
@@ -110,3 +110,321 @@
     padding:5%;
 }
 
+.icon-left {
+    position: relative;
+    float: left;
+    width: 45%;
+    height: 4%;
+}
+
+.little_l {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.little-r {
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.icon {
+    width: 20%;
+    height: 30%;
+}
+
+.icon_info {
+    width: 10%;
+    height: 30%;
+    padding-left: 5%;
+}
+
+.p_icon {
+    position: relative;
+    float: right;
+    margin-right: 40%;
+    color: white;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 14px;
+}
+
+.p-right {
+    margin-right:31%;
+}
+
+.hours-right {
+    position: relative;
+    float:right;
+    width: 55%;
+    height: 4%;
+    display: inline-flex;
+    font-family: $font;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.hours-container {
+    width: 26%;
+    height: 62%;
+    border: solid 1px white;
+    border-radius: 13%;
+    margin-left: 6%;
+}
+
+.hours_move {
+    margin-top:25%;
+}
+
+.between_hours {
+    font-size: 13px;
+    top: 24%;
+    position: relative;
+    left: 3%;
+}
+
+#slide {
+    width: 100%;
+    height: 13%;
+    position: relative;
+    float:left;
+    margin-top:21%;
+}
+
+.slider {
+    width: 100%;
+    height:100%;
+    border:1px solid white;
+    position: absolute;
+    z-index: 500;
+    overflow: hidden;
+    background-color: map-get($colors,bg);
+}
+
+.two{
+    @extend .slider;
+    margin: 0 auto !important;
+    width: 97% !important;
+    top: -2% !important;
+    left: 1%;
+    z-index: 300;
+    opacity: 0.9;
+}
+
+.third{
+    @extend .two;
+    width: 93% !important;
+    top: -4% !important;
+    left: 3%;
+    z-index: 200; 
+    opacity: 0.7;
+}
+
+.for {
+    @extend .third;
+    width: 88% !important;
+    top: -6% !important;
+    left: 5%;
+    z-index:100;
+    opacity: 0.6;
+}
+
+.five {
+    @extend .for;
+    z-index:50;
+    width: 80% !important;
+    top: -8% !important;
+    left: 9%;
+    opacity: 0.3;
+}
+
+#nav_slide {
+    width: 20%;
+    height: 2%;
+    position: relative;
+    float: left;
+    margin: 0 auto;
+    padding-left: 40%;
+    display: inline-flex;
+    padding-top: 3%;
+}
+
+.nav {
+    width: 6%;
+    height: 10%;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 5%;
+}
+
+
+#bars-music {
+    width: 99%;
+    height: 9%;
+    position: relative;
+    float: left;
+    margin-top: -13%;
+    -ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(180deg);
+}
+
+.equalizer {
+    width: 1%;
+    height: 100%;
+    border-left: 5px solid #1ab4ef;
+    display: block;
+    position: relative;
+    float: left;
+   
+}
+
+.white {
+    border-left: 5px solid white;
+}
+
+.h_10 {
+    height: 10%;
+}
+
+.h_15 {
+    height: 15%;
+}
+
+.h_20 {
+    height: 20%;
+}
+
+.h_22 {
+    height: 20%;
+}
+
+.h_30 {
+    height: 30%;
+}
+
+.h_25 {
+    height: 25%;
+}
+
+.h_35 {
+    height: 35%;
+}
+
+.h_45 {
+    height: 45%;    
+}
+
+.h_55 {
+    height: 55%;    
+}
+
+.h_65 {
+    height: 65%;    
+}
+
+.h_75 {
+    height: 75%;    
+}
+
+.stat {
+    width: 104%;
+    height: 8%;
+    position: relative;
+    float: left;
+    margin-top: 7%;
+    display: inline-flex;
+}
+
+.stat-blue {
+    width: 3%;
+    height: 80%;
+    border-left: 15px solid #1ab4ef;
+    padding: 2%;
+}
+
+.n1 {
+    border-left: 15px solid white;
+    height: 7%;
+    position: absolute;
+    margin-top: 39%;
+    left: 0%;
+}
+
+
+.n2 {
+    @extend .n1;
+     margin-top: 29%;
+    left: 9%;
+    height: 27%;
+    
+}
+.n3 {
+    @extend .n2;
+     margin-top: 23%;
+    left: 18%;
+    height: 38%;    
+}
+
+.n4 {
+    @extend .n3;
+    margin-top: 4%;
+    left: 27%;
+    height: 76%;
+}
+
+.n5 {
+    @extend .n4;
+    margin-top: -2%;
+    left: 36%;
+    height: 87%;
+}
+
+.n6 {
+    @extend .n5;
+    margin-top: 1%;
+    left: 46%;
+    height: 82%;
+}
+
+.n7 {
+    @extend .n6;
+    margin-top: 4%;
+    left: 55%;
+    height: 76%;
+}
+
+.n8 {
+    @extend .n7;
+    margin-top: 2%;
+    left: 64%;
+    height: 80%;
+}
+
+.n9 {
+    @extend .n8;
+    margin-top: 10%;
+    left: 73%;
+    height: 63%;
+}
+
+.n10{
+    @extend .n9;
+    margin-top: 4%;
+    left: 82%;
+    height: 75%;
+}
+
+.n11 {
+    @extend .n10;
+    margin-top: 27%;
+    left: 91%;
+    height: 30%;
+}
+
+
+        
+                    

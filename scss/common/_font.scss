@@ -44,7 +44,7 @@ $font:'Open Sans', sans-serif;
 }
 
 @mixin font-hours {
-    @extend .font-title;
+    @include font-title;
     font-size:44px;
 }
 

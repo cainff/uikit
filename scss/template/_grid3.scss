@@ -1,0 +1,111 @@
+.textarea-but {
+    border: 1px solid white;
+    background-color: transparent;
+    text-align: left;
+}
+
+.move_search {
+    margin-top:6%;
+}
+
+.shape {
+    position: absolute;
+    margin-top: -11%;
+    width: 8%;
+    left: 87%;
+}
+
+.windows-text {
+    margin-top: 10%;
+    height: 9%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    color: white;
+    letter-spacing: 1px;
+    white-space: pre-line;
+    line-height: 143%;
+    text-align: left;
+    padding-left: 8%;
+    width: 90%;
+}
+
+.custom-ul {
+    border-radius: 0px;
+    width: 100%;
+    border: 0px;
+    background-color: transparent;
+    margin-top: 2%;
+}
+
+.grid1 {
+    
+    .icon-ul{
+        
+    
+    display: block;
+    }
+    
+    .icon-li {
+        border-bottom:0px;
+        display: block;
+        position: relative;
+        left: 75%;
+        top: 0%;
+    }
+    
+    .ico-check {
+    width: 11%;
+    height: 20%;
+    margin-top: -1%;
+    position: relative;
+    }
+    
+    .ico-arrow {
+    width: 7%;
+    height: 20%;
+    position: relative;
+    margin-top: -4%;
+    margin-left: 2%;
+    }
+    
+    
+    .ico-x{
+    width: 9%;
+    height: 20%;
+    position: relative;
+    margin-top: -5%;
+    margin-left: 1%;
+    }
+    
+    .ico-i {
+    width: 11%;
+    height: 20%;
+    position: relative;
+    margin-top: -5%;
+    } 
+    
+    .ico- {
+    width: 11%;
+    height: 20%;
+    position: relative;
+    margin-top: -5%;
+    }
+    
+}
+
+
+.delete {
+    position: absolute;
+    width: 28%;
+    height: 30%;
+    background-color: white;
+    color:map-get($colors,bg);
+    font-family: $font;
+    text-align: center;
+    top: 59%;
+    left: 72%;
+}
+
+.delete p {
+    margin-top: 25%;
+}
