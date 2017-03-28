@@ -1113,7 +1113,11 @@ ul li {
   position: relative;
   margin-top: -5%; }
 
-/* line 97, ../scss/template/_grid3.scss */
+/* line 96, ../scss/template/_grid3.scss */
+.no-border {
+  border-bottom: 0px; }
+
+/* line 100, ../scss/template/_grid3.scss */
 .delete {
   position: absolute;
   width: 28%;
@@ -1125,9 +1129,260 @@ ul li {
   top: 59%;
   left: 72%; }
 
-/* line 109, ../scss/template/_grid3.scss */
+/* line 112, ../scss/template/_grid3.scss */
 .delete p {
   margin-top: 25%; }
+
+/* line 116, ../scss/template/_grid3.scss */
+.ico-list {
+  width: 100%;
+  height: 3%;
+  display: flex;
+  margin-top: 7%; }
+
+/* line 124, ../scss/template/_grid3.scss */
+.ico {
+  width: 15%;
+  height: 75%; }
+
+/* line 129, ../scss/template/_grid3.scss */
+.pad-ico {
+  padding-left: 6%; }
+
+/* line 133, ../scss/template/_grid3.scss */
+.weather {
+  width: 100%;
+  position: relative;
+  float: left;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 48px;
+  font-size: 15px;
+  font-size: 16px;
+  letter-spacing: 1Px;
+  font-weight: 500;
+  margin-top: 8%;
+  height: 11%; }
+
+/* line 146, ../scss/template/_grid3.scss */
+.light {
+  font-weight: 100;
+  margin-top: 2%; }
+
+/* line 151, ../scss/template/_grid3.scss */
+.ico-weather {
+  width: 100%;
+  height: 80%; }
+
+/* line 156, ../scss/template/_grid3.scss */
+.icon-w {
+  width: 15%;
+  height: 20%;
+  border-left: 1px solid white;
+  margin-top: 5%;
+  padding: 4%;
+  padding-bottom: 15%; }
+
+/* line 165, ../scss/template/_grid3.scss */
+.temp, .temp2, .temp3, .temp4 {
+  position: absolute;
+  margin-top: -9%;
+  margin-left: 6%; }
+
+/* line 171, ../scss/template/_grid3.scss */
+.temp2 {
+  margin-left: 34%; }
+
+/* line 176, ../scss/template/_grid3.scss */
+.temp3 {
+  margin-left: 59%; }
+
+/* line 181, ../scss/template/_grid3.scss */
+.temp4 {
+  margin-left: 84%; }
+
+/* line 186, ../scss/template/_grid3.scss */
+.windows-tag {
+  position: relative;
+  float: left;
+  margin-top: -16%;
+  height: 6%;
+  padding-left: 4%;
+  width: 95%;
+  line-height: 0; }
+
+/* line 196, ../scss/template/_grid3.scss */
+.windows-float {
+  position: relative;
+  float: left;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 48px;
+  font-size: 13px;
+  font-weight: 500;
+  width: 30%;
+  height: 20%;
+  border: 1px solid white;
+  border-radius: 17%;
+  white-space: inherit;
+  margin-left: 6%;
+  margin-top: 4%; }
+
+/* line 211, ../scss/template/_grid3.scss */
+.windows-float p {
+  text-align: left;
+  margin-top: 14%;
+  padding-left: 11%; }
+
+/* line 217, ../scss/template/_grid3.scss */
+.quit {
+  position: absolute;
+  margin-left: 75%;
+  top: 2%; }
+
+/* line 223, ../scss/template/_grid3.scss */
+.short {
+  width: 19%; }
+
+/* line 227, ../scss/template/_grid3.scss */
+.short_quit {
+  margin-left: 67%;
+  top: 19%; }
+
+/* line 232, ../scss/template/_grid3.scss */
+.short_text {
+  margin-top: 2%;
+  margin-top: 23% !important; }
+
+/* line 238, ../scss/template/_grid3.scss */
+.percent {
+  width: 100%;
+  margin-top: 21%;
+  height: auto;
+  display: inline-block; }
+  /* line 244, ../scss/template/_grid3.scss */
+  .percent img {
+    width: 32%; }
+
+/* line 1, ../scss/template/_grid4.scss */
+.range {
+  width: 100%;
+  height: 10%; }
+
+/* line 7, ../scss/template/_grid4.scss */
+input[type=range] {
+  -webkit-appearance: none;
+  /* Hides the slider so that custom slider can be made */
+  width: 100%;
+  /* Specific width is required for Firefox. */
+  background: #5ccaf4;
+  /* Otherwise white in Chrome */
+  margin-top: 45%;
+  height: 2%; }
+
+/* line 15, ../scss/template/_grid4.scss */
+input[type=range]:focus {
+  outline: none; }
+
+/*input[type=range]:focus::-webkit-slider-runnable-track {
+    background-color: white;
+    height: 2%;
+      margin-top: 0%;
+
+} */
+/* line 27, ../scss/template/_grid4.scss */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #ffffff;
+  height: 35px;
+  width: 36px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -5%; }
+
+/* line 38, ../scss/template/_grid4.scss */
+input[type='range']::-webkit-slider-runnable-track {
+  height: 2%;
+  width: auto;
+  -webkit-appearance: none;
+  color: white;
+  margin-top: 0%; }
+
+/* All the same stuff for Firefox */
+/* line 48, ../scss/template/_grid4.scss */
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer; }
+
+/* All the same stuff for IE */
+/* line 59, ../scss/template/_grid4.scss */
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer; }
+
+/* line 69, ../scss/template/_grid4.scss */
+.range-number {
+  display: flex;
+  width: 100%;
+  height: 2%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 48px;
+  font-size: 15px;
+  font-weight: 500;
+  left: -12%;
+  position: relative; }
+  /* line 82, ../scss/template/_grid4.scss */
+  .range-number li {
+    border-bottom: 0px;
+    padding: 11%; }
+
+/* line 88, ../scss/template/_grid4.scss */
+.range-2 {
+  margin-top: 27% !important; }
+
+/* line 92, ../scss/template/_grid4.scss */
+.tab {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 4%; }
+
+/* line 99, ../scss/template/_grid4.scss */
+.tab-but {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 48px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  margin-top: 24%;
+  height: 80%; }
+  /* line 108, ../scss/template/_grid4.scss */
+  .tab-but li {
+    border-left: 1px solid white;
+    border-bottom: 0px;
+    padding: 0%; }
+
+/* line 117, ../scss/template/_grid4.scss */
+.no-border_2 {
+  border-left: 0px !important; }
 
 /* line 2, ../scss/template/_layout.scss */
 body {

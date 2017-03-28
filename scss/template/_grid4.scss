@@ -1,0 +1,121 @@
+.range {
+    width: 100%;
+    height: 10%;
+}
+
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: map-get($colors,paris); /* Otherwise white in Chrome */
+  margin-top: 45%;
+  height: 2%;
+}
+
+input[type=range]:focus {
+    outline:none;
+}
+
+/*input[type=range]:focus::-webkit-slider-runnable-track {
+    background-color: white;
+    height: 2%;
+      margin-top: 0%;
+
+} */
+
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #ffffff;
+  height: 35px;
+  width: 36px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -5%;
+}
+
+  input[type='range']::-webkit-slider-runnable-track {
+      height: 2%;
+      width: auto;
+      -webkit-appearance: none;
+      color: white;
+      margin-top: 0%;
+
+    }
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.range-number {
+    display: flex;
+    width: 100%;
+    height: 2%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 48px;
+    font-size: 15px;
+    font-weight: 500;
+    left: -12%;
+    position: relative;
+        
+        li {
+        border-bottom: 0px;
+        padding:11%;
+    }
+}
+
+.range-2 {
+    margin-top: 27% !important;
+}
+
+.tab {
+    position: relative;
+    float:left;
+    width: 100%;
+    height: 4%;
+}
+
+.tab-but {
+    @include font-title;
+    font-size:15px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    margin-top: 24%;
+    height: 80%;
+    
+        li {
+            
+            border-left:1px solid white;
+            border-bottom: 0px;    
+            padding:0%;
+
+        }
+}
+
+.no-border_2 {
+    border-left:0px !important;
+}
+
+
