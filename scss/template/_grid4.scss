@@ -103,19 +103,105 @@ input[type=range]::-ms-thumb {
     text-align: center;
     display: flex;
     margin-top: 24%;
-    height: 80%;
+    height: 60%;
     
         li {
             
             border-left:1px solid white;
             border-bottom: 0px;    
-            padding:0%;
-
+            padding:5%;
+            width: 25%;
         }
 }
 
 .no-border_2 {
     border-left:0px !important;
 }
+
+.number-bar {
+    width: 100%;
+    height: 3%;
+    margin-top: 33%;
+    position: relative;
+    float: left;
+    
+    .ul-number {
+     margin-top: -12%;
+    border: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+    
+        li {
+            border-left:0px;
+        }
+    
+    }
+}
+
+.text-typo {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+    @include font-title;
+    text-align: left;
+    margin-top:8%;
+}
+
+.quick-1 {
+    font-size: 33px;
+    padding-bottom: 12%;
+}
+.quick-2 {
+    font-size: 31px;
+    padding-bottom: 12%;
+
+}
+
+.quick-3 {
+    font-size: 29px;
+    padding-bottom: 12%;
+}
+
+.quick-4 {
+    font-size: 27px;
+    padding-bottom: 12%;
+}
+
+.quick-5 {
+    font-size: 23px;
+    padding-bottom: 12%;
+}
+
+.quick-6 {
+    font-size: 18px;
+    padding-bottom: 12%;
+
+}
+
+.paragraph {
+    white-space: pre-line;
+    line-height: 31px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-top: -13%;
+}
+
+#charts {
+    width: auto;
+    height: auto;
+    position: relative;
+    float: left;
+    top: 17%;
+}
+
+.chart {
+    width: 100%;
+    height: 100%;
+}
+
+
 
 
