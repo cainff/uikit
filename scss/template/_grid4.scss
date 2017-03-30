@@ -8,8 +8,8 @@ input[type=range] {
   -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
   width: 100%; /* Specific width is required for Firefox. */
   background: map-get($colors,paris); /* Otherwise white in Chrome */
-  margin-top: 45%;
-  height: 2%;
+    margin-top: 80%;
+    height: 2%;
 }
 
 input[type=range]:focus {
@@ -94,6 +94,11 @@ input[type=range]::-ms-thumb {
     float:left;
     width: 100%;
     height: 4%;
+    margin-top:30%;
+}
+
+.tab li:hover {
+    background-color: #40c1f2;
 }
 
 .tab-but {
@@ -138,6 +143,181 @@ input[type=range]::-ms-thumb {
     
     }
 }
+
+
+.play_btn {
+    border: 0px;
+    position: absolute;
+    float: left;
+    background-color: transparent;
+    /* margin-left: 10px; */
+    /* margin-top: 8px; */
+    transition: all 2s linear;
+    -webkit-transition: all 2s linear;
+    /* top: 6%; */
+    left: 2%;
+    top: 26%;
+} 
+
+.play_btn::after {
+    content: "▶";
+    color: white;
+    border:0px solid white;
+    font-size:20px;
+    transition: all 2s linear;
+    -webkit-transition: all 2s linear;
+}
+
+.pause_btn {
+    border: 0px;
+    position: absolute;
+    float: left;
+    background-color: transparent;
+    /* margin-left: 10px; */
+    /* margin-top: 8px; */
+    transition: all 2s linear;
+    -webkit-transition: all 2s linear;
+    /* top: 6%; */
+    left: 2%;
+    top: 15%;
+}
+
+.pause_btn::after {
+    content:"❚❚";
+    color: rgba(255, 0, 0, 0.8);
+    border:0px solid white;
+    font-size:30px;
+    transition: all 2s linear;
+    -webkit-transition: all 2s linear;
+}
+
+.stop_btn {
+    position: absolute;
+    /* margin-left: 1px; */
+    float: left;
+    /* margin-top: 5px; */
+    left: 6%;
+    top: 21%;
+    background-color: transparent;
+    border: 0px solid white;
+}
+
+.stop_btn::after {
+    content:"◼";
+    color:rgba(255, 0, 0, 0.8);
+    border: 0px solid white;
+    font-size: 25px;
+}
+
+.volume a:active {
+    background: map-get($colors,bg);
+}
+
+.volume a:visited {
+    background: rgba(255,0,0,0.2);
+}
+
+.volume {
+    position: absolute;
+    width: 2%;
+    height: 20px;
+    padding: 0%;
+    float: right;
+    left: 92%;
+    top: 41%;
+    display: inline-flex;
+    transform: rotate(269deg);
+}
+
+.volume a {
+    display: inline-block;
+    background: white;
+    /* width: 7px; */
+    vertical-align: bottom;
+    margin-left: 0px;
+    margin-right: 1px;
+    cursor: pointer;
+    border-left: 3px solid #fff;
+    bottom: 0;
+    margin: 33%;
+}
+
+
+
+#progressBar {
+    width: 0px;
+    background: rgba(255, 0, 0, 0.8);
+    height: 100%;
+    text-align: right;
+    line-height: 15px;
+    font-size: 9px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#progressBarControl {
+    width: 40%;
+    height: 2px;
+    border: 1px solid white;
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-top: 19px;
+    position: absolute;
+    left: 32%;
+    top: 16%;
+    background-color: white;
+}
+
+.stick1 {
+    height: 50%;
+    left: 27px;
+}
+.stick2 {
+    height: 75%;
+    left: 27px;
+}
+.stick3 {
+    height: 100%;
+    left: 27px;
+}
+
+
+.player_style {
+    width: 86%;
+    height: 8%;
+    left: -5%;
+    border: 1px solid white;
+    background-color: #26b8f0;
+    position: absolute;
+    z-index: 10;
+}
+
+.progressTime {
+    position: absolute;
+    top: 36%;
+    right: 13%;
+    color: white;
+    font-family: 'open sans',sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.time-2 {
+    right: 73%;
+}
+
+.player_style {
+    position: relative;
+    float: left;
+    height: 3%;
+    width: 100%;
+    margin-top: -13%;
+    left: 0%;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+
+
 
 .text-typo {
     width: 100%;
@@ -194,7 +374,7 @@ input[type=range]::-ms-thumb {
     height: auto;
     position: relative;
     float: left;
-    top: 17%;
+    top: 2%;
 }
 
 .chart {
@@ -202,6 +382,100 @@ input[type=range]::-ms-thumb {
     height: 100%;
 }
 
+.dialog {
+    width: 100%;
+    height: 14%;
+    position: relative;
+    float: left;
+    margin-top: 11%;
+}
+
+.bubble-grid4 {
+    background-color: white;
+    height: auto;
+    width: auto;
+    padding:2%;
+    
+    p {
+        @include font-title;
+        color:map-get($colors,bg);
+        font-size:14px;
+        white-space: pre-line;
+        text-align: left;
+        line-height: 20px;
+    }
+}
+
+.force-width {
+    width: 42%;    
+}
+
+
+.bubble1 {
+    float: left;
+    margin-left: 2%;
+}
+
+.bubble2 {
+    float: left;
+    margin-top: 24%;
+    top: -6%;
+    left: -15%;
+}
+    
+.bubble3 {
+    float: right;
+    margin-top: 8%;
+    margin-right: 2%;
+}
+
+.bubble4 {
+    float: right;
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 2%;
+}
+
+.pic_2 {
+    width: 1% !important;
+    height: 20% !important;
+    /* border: 2px solid white !important; */
+    -ms-transform: rotate(7deg) !important;
+    -webkit-transform: rotate(7deg) !important;
+    transform: rotate(-27deg) !important;
+    position: absolute;
+    top: 70%;
+    left: 93%;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    padding: 3%;
+    background-color: white;
+    border-bottom-left-radius: 100%;
+}
+
+.pic_top {
+     top: 68%;
+    left: 94%;
+    transform: rotate(-27deg) !important;
+
+}
+
+.pic_left {
+    left: -1%;
+    transform: rotate(-146deg) !important;
+    top: 77%;
+    border-top-left-radius: 100%;
+    border: 1px;
+}
+
+.pic_left_top {
+    left: 1%;
+    transform: rotate(-146deg) !important;
+    top: 80%;
+    border-top-left-radius: 100%;
+    /* width: 36%; */
+    border: 2px solid;
+}
 
 
 
